@@ -29,6 +29,7 @@ jobs:
             r41l1m4/rotten-potatoes:latest
             r41l1m4/rotten-potatoes:v${{ github.run_number }}
   CD:
+    needs: [CI]
     runs-on: ubuntu-latest
     
     steps:
